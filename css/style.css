@@ -9672,3 +9672,49 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+.form-group{
+  position: relative;
+}
+.form-group input,.form-group textarea{
+  border: 2px solid #f0f0f0;
+  margin-bottom: 0;
+ 
+}
+
+.form-group.success input{
+  border-color: #2acc71;
+}
+.form-group.error input{
+  border-color: #e74c3c;
+}
+
+
+.form-group svg{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  visibility: hidden;
+
+}
+.form-group.success svg.bi-check-circle{
+  color: #2acc71;
+  visibility: visible;
+}
+.form-group.error svg.bi-exclamation-circle{
+  color: #e74c3c;
+  visibility: visible;
+}
+.form-group small{
+  
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+.form-group.error small{
+  visibility: visible;
+  color: #e74c3c;
+}
